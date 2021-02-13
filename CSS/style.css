@@ -1,0 +1,93 @@
+*,
+body,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: cadetblue;
+}
+
+.theme {
+  background-color: black;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+  -ms-grid-rows: 900px;
+      grid-template-rows: 900px;
+  margin-top: 70px;
+}
+
+main .firstDiv {
+  position: relative;
+  background-color: papayawhip;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / span 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / span 1;
+}
+
+main .firstDiv button {
+  position: absolute;
+  top: 0;
+  left: 63%;
+}
+
+main .firstDiv .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 300px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+main .firstDiv .container .square {
+  width: 150px;
+  height: 150px;
+  background-color: salmon;
+  border: 1px solid black;
+}
+
+main .firstDiv .newClass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 300px;
+  margin: auto;
+  margin-top: 50px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main .secondtDiv {
+  background-color: darkgray;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / span 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / span 1;
+}
+/*# sourceMappingURL=style.css.map */
